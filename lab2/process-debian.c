@@ -52,9 +52,9 @@ int main()
     }
 
     while ((dir = readdir(dir_proc)) != 0)
-	{
+    {
         if (dir->d_type == DT_DIR && isdigit(dir->d_name[0]))
-		{
+        {
 			printf("Pid: %s\n", dir->d_name);
 			printCmd(dir->d_name);
 			printResources(dir->d_name);
