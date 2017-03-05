@@ -32,8 +32,6 @@ int main(int argc, char *argv[])
 		return 1;
 	}
 
-	printf("Current Priority Class: %d\n", GetPriorityClass(hProcess));
-
 	switch (priority)
 	{
 	case 1:
